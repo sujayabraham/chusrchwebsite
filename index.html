@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Alphonsa Pilgrim Church, Nellyadi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --church-maroon: #800020;
+            --church-gold: #D4AF37;
+            --church-dark: #2C2C2C;
+            --church-light: #FDFBF7;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--church-light);
+            color: var(--church-dark);
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, .navbar-brand {
+            font-family: 'Cinzel', serif;
+        }
+        .navbar {
+            background-color: var(--church-maroon);
+            border-bottom: 3px solid var(--church-gold);
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-size: 0.95rem;
+        }
+        .nav-link:hover {
+            color: var(--church-gold) !important;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(128, 0, 32, 0.85), rgba(44, 44, 44, 0.85)), url('https://images.unsplash.com/photo-1548625361-167a641a75f3?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+            color: white;
+            padding: 100px 15px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+        }
+        .btn-gold {
+            background-color: var(--church-gold);
+            color: var(--church-dark);
+            font-weight: 600;
+        }
+        .btn-gold:hover {
+            background-color: #b3922c;
+            color: white;
+        }
+        .section-title {
+            color: var(--church-maroon);
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 40px;
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+        }
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 3px;
+            background-color: var(--church-gold);
+            display: block;
+            margin: 10px auto 0;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+        }
+        .association-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(128, 0, 32, 0.1);
+            color: var(--church-maroon);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            font-size: 28px;
+        }
+        .news-badge {
+            background-color: var(--church-maroon);
+            color: white;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: transform 0.2s;
+        }
+        .social-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        .btn-facebook { background-color: #1877F2; }
+        .btn-instagram { background-color: #E4405F; }
+        .btn-youtube { background-color: #FF0000; }
+
+        .nav-pills .nav-link {
+            color: var(--church-maroon) !important;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin: 0 5px;
+            transition: all 0.2s;
+        }
+        .nav-pills .nav-link.active {
+            color: white !important;
+            background-color: var(--church-maroon) !important;
+            border-color: var(--church-maroon) !important;
+        }
+        .nav-pills .nav-link:hover:not(.active) {
+            background-color: #e9ecef;
+            color: var(--church-dark) !important;
+        }
+
+        footer {
+            background-color: var(--church-maroon);
+            color: white;
+            padding: 40px 15px 20px;
+            border-top: 4px solid var(--church-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= 1. NAVIGATION BAR ================= -->
+    <nav class="navbar navbar-expand-lg sticky-top py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fa-solid fa-cross fa-md me-2 text-warning"></i> <span class="fs-6 fs-md-5">St. Alphonsa Pilgrim Church</span>
+            </a>
+            <button class="navbar-toggler bg-light border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center text-center mt-3 mt-lg-0">
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#clergy">Clergy & Convent</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#directory">Leadership & Orgs</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#timings">Mass Timings</a></li>
+                    <li class="nav-item py-1 py-lg-0" id="navNotice" style="display:none;"><a class="nav-link" href="#notice">Weekly Notice</a></li>
+                    <li class="nav-item py-1 py-lg-0" id="navPrayer" style="display:none;"><a class="nav-link" href="#prayer">Prayer Meetings</a></li>
+                    <li class="nav-item py-1 py-lg-0" id="navNews"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#donations">Donations</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#social">Social Media</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item my-2 my-lg-0 ms-lg-2">
+                        <a href="https://maps.app.goo.gl/4bEkbaFuExh2Jxaz6" target="_blank" class="btn btn-gold btn-sm w-100 w-lg-auto"><i class="fa-solid fa-map-location-dot me-1"></i> Map</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= FLASH NEWS TICKER ================= -->
+    <div class="bg-danger text-white py-2 px-3 overflow-hidden border-bottom border-warning border-2">
+        <div class="container d-flex align-items-center">
+            <span class="badge bg-warning text-dark me-3 fw-bold px-2 py-1">FLASH NEWS</span>
+            <marquee behavior="scroll" direction="left" scrollamount="5" class="small mb-0">
+                🔔 Welcome to St. Alphonsa Pilgrim Church Nellyadi Official Website! &nbsp;&bull;&nbsp; Check out our Weekly Notice Board for upcoming parish meetings & catechism schedules. &nbsp;&bull;&nbsp; Read our latest Annual Feast celebration report!
+            </marquee>
+        </div>
+    </div>
+
+    <!-- ================= 2. HERO SECTION ================= -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <span class="badge bg-warning text-dark mb-3 px-3 py-2 fs-6">Diocese of Belthangady</span>
+            <h1 class="fw-bold mb-3">St. Alphonsa Pilgrim Church</h1>
+            <p class="lead mb-4 fs-6 fs-md-5">Nellyadi, Dakshina Kannada, Karnataka — Walking in the footsteps of St. Alphonsa, our First Indian Saint</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                <a href="#timings" class="btn btn-gold btn-lg fs-6">Mass Timings</a>
+                <a href="#donations" class="btn btn-outline-light btn-lg fs-6">Support Shrine / Donate</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= VICAR'S MESSAGE (Homepage) ================= -->
+    <section id="vicar-message" class="py-5 bg-white">
+        <div class="container py-3">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-4 text-center">
+                    <img src="Fr_Mathew_Joseph_Vettamthadathil.png" class="img-fluid rounded-4 shadow mb-3" style="max-height: 320px; object-fit: cover;" alt="Rev. Fr. Mathew Joseph Vettamthadathil">
+                    <h4 class="fw-bold mb-1">Rev. Fr. Mathew Joseph Vettamthadathil</h4>
+                    <p class="text-danger fw-semibold small mb-0">Vicar</p>
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="section-title text-start mb-3">Vicar's Message</h2>
+                    <blockquote class="blockquote fs-6 text-muted font-italic mb-3">
+                        "Dearly beloved pilgrims, brothers, sisters, and children in Christ,"
+                    </blockquote>
+                    <p class="text-muted small">It is with immense joy and gratitude to Almighty God that I welcome you to the official web portal of St. Alphonsa Pilgrim Church, Nellyadi, under the Syro-Malabar Catholic Diocese of Belthangady. As a recognized pilgrim center, our shrine is a blessed sanctuary drawing the faithful for prayer, spiritual renewal, and active fellowship.</p>
+                    <p class="text-muted small">Following the inspiring life of our patroness St. Alphonsa—our first Indian saint who found holiness in ordinary daily suffering and deep love for the Eucharist—let us walk together in unity, supporting one another through prayer and charitable deeds.</p>
+                    <p class="text-muted small mb-0">May the Almighty bless your families and pilgrimage with peace, health, and abundant spiritual graces through the intercession of St. Alphonsa.</p>
+                    <p class="fw-bold text-danger mt-3 mb-0">— Rev. Fr. Mathew Joseph Vettamthadathil, Vicar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. ABOUT & PARISH HISTORY ================= -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-3">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-6">
+                    <img src="church.jpeg" class="img-fluid rounded-4 shadow" alt="St. Alphonsa Pilgrim Church Nellyadi">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start mb-3">Pilgrim Center History & Patron</h2>
+                    <p class="text-muted small fs-md-6">St. Alphonsa Pilgrim Church, Nellyadi is a renowned pilgrim shrine belonging to the Syro-Malabar Catholic Diocese of Belthangady, Dakshina Kannada, Karnataka. Named after St. Alphonsa, the first canonized saint of India, our parish attracts numerous pilgrims seeking spiritual solace, novena graces, and active charitable outreach.</p>
+                    <p class="text-muted small fs-md-6">As a designated pilgrim center in the Diocese of Belthangady, our community gathers regularly for Holy Qurbana, special novenas, pious associations, youth apostolate, and pilgrim hospitality.</p>
+                    <div class="row mt-4 g-3">
+                        <div class="col-6">
+                            <h6 class="text-danger fw-bold">Patron Saint</h6>
+                            <p class="mb-0 text-muted small">St. Alphonsa</p>
+                        </div>
+                        <div class="col-6">
+                            <h6 class="text-danger fw-bold">Diocese</h6>
+                            <p class="mb-0 text-muted small">Diocese of Belthangady</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. CLERGY & RELIGIOUS COMMUNITY (TABS) ================= -->
+    <section id="clergy" class="py-5 bg-white">
+        <div class="container py-3">
+            <h2 class="text-center section-title mb-3">Shrine Clergy & Religious Community</h2>
+            <p class="text-center text-muted mb-4 small">Explore our parish clergy leadership and religious sisters community.</p>
+
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="clergyConventTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4 fw-bold" id="clergy-tab" data-bs-toggle="pill" data-bs-target="#clergy-pane" type="button" role="tab" aria-controls="clergy-pane" aria-selected="true"><i class="fa-solid fa-church me-2"></i> Shrine Clergy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 fw-bold" id="convent-tab" data-bs-toggle="pill" data-bs-target="#convent-pane" type="button" role="tab" aria-controls="convent-pane" aria-selected="false"><i class="fa-solid fa-cross me-2"></i> Convent & Sisters</button>
+                </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="clergyConventTabsContent">
+                <!-- Tab 1: Clergy -->
+                <div class="tab-pane fade show active" id="clergy-pane" role="tabpanel" aria-labelledby="clergy-tab">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-5">
+                            <div class="card card-custom p-4 text-center h-100 bg-light">
+                                <img src="Fr_Mathew_Joseph_Vettamthadathil.png" class="rounded-circle mx-auto mb-3 shadow-sm" style="width: 100px; height: 100px; object-fit: cover;" alt="Rev. Fr. Mathew Joseph Vettamthadathil">
+                                <h5 class="fw-bold mb-1">Rev. Fr. Mathew Joseph Vettamthadathil</h5>
+                                <p class="text-danger fw-semibold mb-2 small">Vicar</p>
+                                <p class="text-muted small mb-0">Shrine administration, liturgy, and spiritual leadership.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card card-custom p-4 text-center h-100 bg-light">
+                                <img src="fr_shaji_mathew.png" class="rounded-circle mx-auto mb-3 shadow-sm" style="width: 100px; height: 100px; object-fit: cover;" alt="Rev. Fr. Shaji Mathew">
+                                <h5 class="fw-bold mb-1">Rev. Fr. Shaji Mathew</h5>
+                                <p class="text-danger fw-semibold mb-2 small">Assistant Vicar / Director</p>
+                                <p class="text-muted small mb-0">Serving the youth, catechism, and pilgrim welfare.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Convent & Sisters -->
+                <div class="tab-pane fade" id="convent-pane" role="tabpanel" aria-labelledby="convent-tab">
+                    <div class="row g-4 justify-content-center">
+                        <!-- Sister Superior -->
+                        <div class="col-md-5">
+                            <div class="card card-custom p-4 text-center h-100 bg-light">
+                                <div class="mb-3">
+                                    <span class="fa-stack fa-2x text-danger">
+                                        <i class="fa-solid fa-circle fa-stack-2x text-white"></i>
+                                        <i class="fa-solid fa-cross fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                                <h5 class="fw-bold mb-1">Rev. Sr. [Sister Superior Name]</h5>
+                                <p class="text-danger fw-semibold mb-2 small">Superior / Convent Head</p>
+                                <p class="text-muted small mb-0">Guiding community prayer, pastoral service, and parish apostolate.</p>
+                            </div>
+                        </div>
+                        <!-- Sisters List / Community -->
+                        <div class="col-md-7">
+                            <div class="card card-custom p-4 h-100 bg-light d-flex flex-column">
+                                <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-users me-2"></i> Convent Community & Sisters</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
+                                        <span>Rev. Sr. [Sister Name 1]</span>
+                                        <span class="badge bg-danger rounded-pill">Catechism & Choir</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
+                                        <span>Rev. Sr. [Sister Name 2]</span>
+                                        <span class="badge bg-danger rounded-pill">Sacristy & Liturgy</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
+                                        <span>Rev. Sr. [Sister Name 3]</span>
+                                        <span class="badge bg-danger rounded-pill">Pastoral Care</span>
+                                    </li>
+                                </ul>
+                                <p class="text-muted small mb-0">Active involvement in Sunday catechism, pious associations animation, church cleaning, and choir assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. LEADERSHIP & ORGANIZATIONS (TABS) ================= -->
+    <section id="directory" class="py-5 bg-light">
+        <div class="container py-3">
+            <h2 class="text-center section-title mb-3">Shrine Leadership & Organizations</h2>
+            <p class="text-center text-muted mb-4 small">Explore parish directory, trustees, history, and active pious associations.</p>
+
+            <!-- Tabs Navigation -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="leadershipOrgsTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4 fw-bold" id="leadership-tab" data-bs-toggle="pill" data-bs-target="#leadership-pane" type="button" role="tab" aria-controls="leadership-pane" aria-selected="true"><i class="fa-solid fa-user-shield me-2"></i> Leadership & Directory</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 fw-bold" id="orgs-tab" data-bs-toggle="pill" data-bs-target="#orgs-pane" type="button" role="tab" aria-controls="orgs-pane" aria-selected="false"><i class="fa-solid fa-users me-2"></i> Organizations & Associations</button>
+                </li>
+            </ul>
+
+            <!-- Tabs Content -->
+            <div class="tab-content" id="leadershipOrgsTabsContent">
+                <!-- Tab 1: Leadership & Directory -->
+                <div class="tab-pane fade show active" id="leadership-pane" role="tabpanel" aria-labelledby="leadership-tab">
+                    <div class="row g-4">
+                        <!-- Current Trustees -->
+                        <div class="col-md-6">
+                            <div class="card card-custom p-4 h-100 border-top border-danger border-4 bg-white d-flex flex-column">
+                                <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-user-shield me-2"></i> Current Shrine Trustees (Trusties)</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>[Trustee Name 1]</span>
+                                        <span class="badge bg-danger rounded-pill">2024 - 2027</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>[Trustee Name 2]</span>
+                                        <span class="badge bg-danger rounded-pill">2024 - 2027</span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-danger btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#trusteesModal">View All Trustees</button>
+                            </div>
+                        </div>
+                        <!-- Former Trustees -->
+                        <div class="col-md-6">
+                            <div class="card card-custom p-4 h-100 border-top border-warning border-4 bg-white d-flex flex-column">
+                                <h4 class="fw-bold text-warning-emphasis mb-3"><i class="fa-solid fa-history me-2"></i> Former Shrine Trustees</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>[Former Trustee Name 1]</span>
+                                        <small class="text-muted">2021 - 2024</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>[Former Trustee Name 2]</span>
+                                        <small class="text-muted">2018 - 2021</small>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-warning btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerTrusteesModal">View All Former Trustees</button>
+                            </div>
+                        </div>
+                        <!-- Former Vicars -->
+                        <div class="col-md-6">
+                            <div class="card card-custom p-4 h-100 border-top border-primary border-4 bg-white d-flex flex-column">
+                                <h4 class="fw-bold text-primary mb-3"><i class="fa-solid fa-person-chalkboard me-2"></i> Former Rectors (Vicars)</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. [Former Vicar 1]</span>
+                                        <small class="text-muted">2018 - 2024</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. [Former Vicar 2]</span>
+                                        <small class="text-muted">2012 - 2018</small>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-primary btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerVicarsModal">View All Former Vicars</button>
+                            </div>
+                        </div>
+                        <!-- Former Vice Vicars -->
+                        <div class="col-md-6">
+                            <div class="card card-custom p-4 h-100 border-top border-success border-4 bg-white d-flex flex-column">
+                                <h4 class="fw-bold text-success mb-3"><i class="fa-solid fa-user-group me-2"></i> Former Vice Vicars (Assistant Priests)</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. [Former Asst Vicar 1]</span>
+                                        <small class="text-muted">2021 - 2024</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. [Former Asst Vicar 2]</span>
+                                        <small class="text-muted">2017 - 2020</small>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-success btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerAsstVicarsModal">View All Former Vice Vicars</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Organizations & Associations -->
+                <div class="tab-pane fade" id="orgs-pane" role="tabpanel" aria-labelledby="orgs-tab">
+                    <p class="text-center text-muted mb-4 small">Click on any organization below to view full team details, meeting timings, objectives, activities, and history.</p>
+                    <div class="row g-4">
+                        <!-- Altar Angels -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Altar Angels', 'fa-solid fa-hands-praying', 'Spiritual Director: Rev. Fr. Assistant Vicar\nHead Coordinator: [Coordinator Name]\nSenior Servers: [Name 1], [Name 2]', 'Every Saturday at 4:00 PM', 'To assist devoutly at the altar and sanctuary during Holy Qurbana and liturgical services.', 'Altar service during Sunday Qurbana, feast days, annual retreat, and sanctuary care.', 'Formed to encourage young boys and girls to grow close to the altar and deepen their reverence for the Eucharist.')">
+                                <div class="association-icon"><i class="fa-solid fa-hands-praying"></i></div>
+                                <h5 class="fw-bold">Altar Angels</h5>
+                                <p class="text-muted small mb-0">Assisting devoutly at the altar and sanctuary during liturgical services.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Choir -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Parish Choir', 'fa-solid fa-music', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nChoir Master: [Choir Master Name]\nOrganist: [Organist Name]\nLead Vocalists: [Name 1], [Name 2]', 'Every Friday at 7:00 PM', 'To elevate liturgical worship through sacred hymns, Gregorian chant, and devout choral singing.', 'Singing during Sunday Qurbana, solemn feast masses, weddings, and Christmas carols.', 'Established since the founding of the parish to lead the congregation in active liturgical participation.')">
+                                <div class="association-icon"><i class="fa-solid fa-music"></i></div>
+                                <h5 class="fw-bold">Choir</h5>
+                                <p class="text-muted small mb-0">Leading the congregation in uplifting liturgical hymns and sacred music.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Pitruvedi -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Pitruvedi', 'fa-solid fa-user-tie', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 2nd Sunday after Qurbana', 'To unite Catholic men in spiritual leadership, exemplary Christian fatherhood, and active support for parish development.', 'Family prayer promotion, charity drives, church maintenance support, and annual pilgrimage.', 'Formed under diocese guidelines to strengthen men’s participation in parish life and family spirituality.')">
+                                <div class="association-icon"><i class="fa-solid fa-user-tie"></i></div>
+                                <h5 class="fw-bold">Pitruvedi</h5>
+                                <p class="text-muted small mb-0">Men's association dedicated to spiritual leadership and Christian fatherhood.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Mathruvedi -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Mathruvedi', 'fa-solid fa-users', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 1st Sunday after Qurbana', 'To foster deep spiritual growth among Catholic women, promote family rosary, and engage in charitable works.', 'Intercessory prayer chains, supporting needy families, feast day hospitality, and orphanage visits.', 'Inspired by the virtues of Mother Mary and St. Alphonsa, uniting mothers in prayer and service.')">
+                                <div class="association-icon"><i class="fa-solid fa-users"></i></div>
+                                <h5 class="fw-bold">Mathruvedi</h5>
+                                <p class="text-muted small mb-0">Women's organization fostering spiritual growth, family prayer, and charitable works.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Youth (SMYM) -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Youth (SMYM)', 'fa-solid fa-fire', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]\nSports Coord: [Coord Name]', 'Every Saturday at 5:30 PM', 'To empower young Catholics to live Christ-centered lives, build strong fellowship, and serve society.', 'Youth retreats, inter-parish sports meets, cultural fests, blood donation camps, and social apostolate.', 'Affiliated with SMYM (Syro-Malabar Youth Movement), active in building a vibrant youth community.')">
+                                <div class="association-icon"><i class="fa-solid fa-fire"></i></div>
+                                <h5 class="fw-bold">Youth (SMYM)</h5>
+                                <p class="text-muted small mb-0">Dynamic youth movement active in spiritual retreats, social service, and sports.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- CML -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('CML (Children\'s Mary League)', 'fa-solid fa-seedling', 'Animator: Sister Superior / Catechism Head\nPresident: [Leader Name]\nSecretary: [Secretary Name]', 'Every Sunday at 10:30 AM', 'To nurture deep devotion to Mother Mary and foster piety and virtue among children.', 'Rosary recitation during May/October, pious competitions, catechism day programs, and carol singing.', 'Established to guide children on the path of holiness through the Immaculate Heart of Mary.')">
+                                <div class="association-icon"><i class="fa-solid fa-seedling"></i></div>
+                                <h5 class="fw-bold">CML (Children's Mary League)</h5>
+                                <p class="text-muted small mb-0">Pious movement nurturing devotion to Mother Mary and spiritual growth among children.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Vincent de Paul Society -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Vincent de Paul Society', 'fa-solid fa-hand-holding-heart', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every Sunday at 11:30 AM', 'To practice the gospel virtue of charity through person-to-person service to the poor, sick, and suffering.', 'Weekly family visits, financial aid for medical treatments, educational support, and food kits distribution.', 'A global charitable movement rooted in the parish, serving as the hands and feet of Christ to the marginalized.')">
+                                <div class="association-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                                <h5 class="fw-bold">Vincent de Paul Society</h5>
+                                <p class="text-muted small mb-0">Charitable society dedicated to rendering service to the poor, needy, and sick.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                        <!-- Sunday Catechism -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Sunday Catechism', 'fa-solid fa-book-open', 'Director: Rev. Fr. Mathew Joseph Vettamthadathil\nHeadmaster / Principal: [Name]\nStaff Representative: [Name]\nFaculty: All Parish Teachers', 'Every Sunday from 10:30 AM', 'To impart solid doctrinal, moral, and scriptural formation to children and youth.', 'Grade-wise classes, Bible kalotsavam, scripture exams, annual day celebrations, and catechism retreats.', 'The cornerstone of parish faith formation, educating generations in the Syro-Malabar liturgical tradition.')">
+                                <div class="association-icon"><i class="fa-solid fa-book-open"></i></div>
+                                <h5 class="fw-bold">Sunday Catechism</h5>
+                                <p class="text-muted small mb-0">Religious formation and faith education classes for children and youth.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 6. MASS & NOVENA TIMINGS ================= -->
+    <section id="timings" class="py-5 bg-white">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Holy Qurbana & Liturgical Timings</h2>
+
+            <!-- Special Mass Flash Banner -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10">
+                    <div class="alert alert-warning border-0 shadow-sm d-flex align-items-center p-3 p-md-4 rounded-4" role="alert" style="background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%); border-left: 6px solid #D4AF37 !important;">
+                        <i class="fa-solid fa-star-of-david fa-2x text-warning me-3 flex-shrink-0 d-none d-sm-block"></i>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark"><i class="fa-solid fa-church me-2 text-danger"></i> Special Holy Qurbana & Festal Mass Notice</h5>
+                            <p class="mb-0 small text-muted">Please note: On major feast days and solemnities, special high mass timings and solemn processions will be announced in advance via our Weekly Notice Board and parish announcements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center" id="massTimingsGrid">
+                <!-- Sunday First Mass -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-danger border-4 bg-light">
+                        <div class="card-body">
+                            <i class="fa-solid fa-church fa-2x text-danger mb-3"></i>
+                            <h5 class="fw-bold">Sunday First Mass</h5>
+                            <p class="text-muted small mb-2">Early Morning Qurbana</p>
+                            <h4 class="text-dark fw-bold">6:30 AM</h4>
+                            <p class="small text-muted mt-2 mb-0">Devotional Holy Qurbana</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sunday Second Mass -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-danger border-4 bg-light">
+                        <div class="card-body">
+                            <i class="fa-solid fa-church fa-2x text-danger mb-3"></i>
+                            <h5 class="fw-bold">Sunday Second Mass</h5>
+                            <p class="text-muted small mb-2">Main Pilgrim Qurbana</p>
+                            <h4 class="text-dark fw-bold">9:00 AM</h4>
+                            <p class="small text-muted mt-2 mb-0">Followed by Sunday Catechism</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Weekday Qurbana -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-warning border-4 bg-light d-flex flex-column">
+                        <div class="card-body">
+                            <i class="fa-solid fa-calendar-days fa-2x text-warning mb-3"></i>
+                            <h5 class="fw-bold">Weekday Qurbana</h5>
+                            <p class="text-muted small mb-2">Monday to Saturday</p>
+                            <h4 class="text-dark fw-bold">6:00 PM</h4>
+                            <p class="small text-muted mt-2 mb-0">St. Alphonsa Novena on Tuesdays</p>
+                        </div>
+                        <button class="btn btn-outline-warning btn-sm mt-auto align-self-center px-4" data-bs-toggle="modal" data-bs-target="#weekdayMassModal">View All Weekdays</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 7. PARISH WEEKLY NOTICE & BULLETIN (Conditional) ================= -->
+    <section id="notice" class="py-5 bg-light" style="display:none;">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Parish Weekly Notice Board</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-custom p-4 p-md-5 border-start border-danger border-5 bg-white">
+                        <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+                            <h4 class="fw-bold mb-0 text-danger"><i class="fa-solid fa-bullhorn me-2"></i> Weekly Announcements & Notices</h4>
+                            <span class="badge bg-danger px-3 py-2">Current Week</span>
+                        </div>
+                        <ul class="list-unstyled mb-4" id="noticeList" style="line-height: 1.8;">
+                            <!-- Dynamically populated -->
+                        </ul>
+                        <div class="text-center">
+                            <a href="#contact" class="btn btn-gold btn-sm"><i class="fa-solid fa-file-pdf me-2"></i> Download Weekly Notice PDF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 8. SCHEDULED PRAYER MEETINGS (Conditional) ================= -->
+    <section id="prayer" class="py-5 bg-white" style="display:none;">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Scheduled Prayer Meetings</h2>
+            <div class="row g-4 justify-content-center" id="prayerMeetingsGrid">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 9. LATEST NEWS & EVENTS ================= -->
+    <section id="news" class="py-5 bg-light">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Latest News & Shrine Events</h2>
+            <div class="row g-4 justify-content-center" id="newsGrid">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">News / Media</span>
+                            <h5 class="fw-bold mb-2">Puttur: Foundation stone laid for new St Alphonsa Pilgrim Church</h5>
+                            <p class="text-muted small mb-2"><i class="fa-regular fa-calendar me-1"></i> November 6, 2026 | Daijiworld</p>
+                            <p class="text-muted small flex-grow-1">The blessing and laying of the foundation stone for the new St Alphonsa Pilgrim Church in Nellyadi, Dakshina Kannada district, under the pastoral leadership of parish priest Fr Shaji Mathew.</p>
+                            <a href="https://www.daijiworld.com/index.php/news/newsDisplay?newsID=1334537" target="_blank" class="btn btn-outline-danger btn-sm mt-3 align-self-start">Read Full Report <i class="fa-solid fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">News / Media</span>
+                            <h5 class="fw-bold mb-2">Puttur: St Alphonsa Church, Nellyadi honours parents of children with disabilities</h5>
+                            <p class="text-muted small mb-2"><i class="fa-regular fa-calendar me-1"></i> October 29, 2026 | Daijiworld</p>
+                            <p class="text-muted small flex-grow-1">The Mathruvedi (Mothers’ Association) of St Alphonsa Pilgrim Church honoured parents of children with disabilities during a special training programme, led by parish priest Fr Shaji Mathew.</p>
+                            <a href="https://www.daijiworld.com/index.php/news/newsDisplay?newsID=1333760" target="_blank" class="btn btn-outline-danger btn-sm mt-3 align-self-start">Read Full Report <i class="fa-solid fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger mb-2 align-self-start">News / Media</span>
+                            <h5 class="fw-bold mb-2">St Alphonsa Pilgrim Church wins overall championship at CML Prathibha Sangamam 2026</h5>
+                            <p class="text-muted small mb-2"><i class="fa-regular fa-calendar me-1"></i> October 22, 2026 | Daijiworld</p>
+                            <p class="text-muted small flex-grow-1">St Alphonsa Pilgrim Church, Nellyadi, won the overall championship at the CML Prathibha Sangamam 2026, organized by Udane Forane under the diocese of Beltangady, securing multiple prizes and championship titles.</p>
+                            <a href="https://www.daijiworld.com/index.php/news/newsDisplay?newsID=1332169" target="_blank" class="btn btn-outline-danger btn-sm mt-3 align-self-start">Read Full Report <i class="fa-solid fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PARISH ASSOCIATIONS & ORGANIZATIONS (CLUBBED WITH DIRECTORY) ================= -->
+
+    <!-- ================= 11. PARISH DONATIONS & OFFERINGS ================= -->
+    <section id="donations" class="py-5 bg-light">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Shrine Donations & Pilgrim Offerings</h2>
+            <p class="text-center text-muted mb-5 small">Support our pilgrim church building, charity works, and youth apostolate through your generous contributions.</p>
+
+            <div class="row g-4 justify-content-center mb-5">
+                <!-- Fund 1 -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-danger border-4 bg-white">
+                        <i class="fa-solid fa-church fa-2x text-danger mb-3"></i>
+                        <h5 class="fw-bold">Building & Shrine Development</h5>
+                        <p class="text-muted small mb-3">Contribute towards ongoing church restoration, pilgrim facilities, and shrine infrastructure development.</p>
+                        <button class="btn btn-outline-danger btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#donationModal" onclick="setDonationCause('Building & Shrine Development Fund')">Donate Now</button>
+                    </div>
+                </div>
+                <!-- Fund 2 -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-warning border-4 bg-white">
+                        <i class="fa-solid fa-hand-holding-heart fa-2x text-warning mb-3"></i>
+                        <h5 class="fw-bold">Poor Relief & Charity</h5>
+                        <p class="text-muted small mb-3">Support St. Vincent de Paul society in assisting medical needs, food distribution, and needy families.</p>
+                        <button class="btn btn-outline-warning btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#donationModal" onclick="setDonationCause('Poor Relief & Charity Fund')">Donate Now</button>
+                    </div>
+                </div>
+                <!-- Fund 3 -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center border-top border-success border-4 bg-white">
+                        <i class="fa-solid fa-seedling fa-2x text-success mb-3"></i>
+                        <h5 class="fw-bold">Catechism & Youth Fund</h5>
+                        <p class="text-muted small mb-3">Help fund faith formation classes, catechism books, and youth leadership retreats.</p>
+                        <button class="btn btn-outline-success btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#donationModal" onclick="setDonationCause('Catechism & Youth Fund')">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct Bank Transfer Details Card -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-custom p-4 p-md-5 bg-white border-start border-danger border-5">
+                        <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-building-columns me-2"></i> Direct Bank Transfer / NEFT / UPI Details</h4>
+                        <p class="text-muted small mb-4">Pilgrims, parishioners, and well-wishers can transfer offerings directly via bank account or UPI scanner:</p>
+                        <div class="row g-3 small">
+                            <div class="col-sm-6"><strong>Account Name:</strong> St. Alphonsa Pilgrim Church Nellyadi</div>
+                            <div class="col-sm-6"><strong>Account Number:</strong> XXXXXXXXXXXXXX</div>
+                            <div class="col-sm-6"><strong>Bank & Branch:</strong> South Indian Bank / Canara Bank, Nellyadi</div>
+                            <div class="col-sm-6"><strong>IFSC Code:</strong> SIBL000XXXX / CNRB000XXXX</div>
+                            <div class="col-12"><strong class="text-danger">UPI ID (GPay / PhonePe / Paytm):</strong> stalphonsa.nellyadi@oksbi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 12. SOCIAL MEDIA ================= -->
+    <section id="social" class="py-5 bg-white">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Connect With Us Online</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Facebook Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 bg-light text-center h-100">
+                        <i class="fa-brands fa-facebook fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Facebook Page</h5>
+                        <p class="text-muted small mb-3">Follow our pilgrim center updates, photos, and announcements.</p>
+                        <a href="https://www.facebook.com/pages/St%20Alphonsa%20Catholic%20Church/1758477594176790/#" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Visit Facebook</a>
+                    </div>
+                </div>
+                <!-- Instagram Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 bg-light text-center h-100">
+                        <i class="fa-brands fa-instagram fa-3x text-danger mb-3"></i>
+                        <h5 class="fw-bold">SMYM Nellyadi (Instagram)</h5>
+                        <p class="text-muted small mb-3">Check out youth meetups, shrine celebrations, and activities.</p>
+                        <a href="https://www.instagram.com/smym_nellyadi_official/" target="_blank" class="btn btn-outline-danger btn-sm mt-auto">Visit Instagram</a>
+                    </div>
+                </div>
+                <!-- YouTube Card -->
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 bg-light text-center h-100">
+                        <i class="fa-brands fa-youtube fa-3x text-danger mb-3"></i>
+                        <h5 class="fw-bold">YouTube Channel</h5>
+                        <p class="text-muted small mb-3">Watch live-streamed Holy Qurbana, novenas, and shrine events.</p>
+                        <a href="#" target="_blank" class="btn btn-outline-danger btn-sm mt-auto">Subscribe on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 13. PHOTO GALLERY & ALBUMS ================= -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Shrine Photo Gallery & Albums</h2>
+            <p class="text-center text-muted mb-5 small">Explore our official photo albums capturing parish feasts, youth gatherings, and pilgrim celebrations.</p>
+            <div class="row g-4">
+                <!-- Album 1 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 bg-white">
+                        <img src="https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&q=80&w=600" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="Shrine Album">
+                        <div class="card-body d-flex flex-column p-4">
+                            <span class="badge bg-danger mb-2 align-self-start">Flickr Album</span>
+                            <h5 class="fw-bold mb-2">St. Alphonsa Shrine & Parish Album</h5>
+                            <p class="text-muted small flex-grow-1">Official photo album featuring church architecture, clergy, and parish milestones.</p>
+                            <a href="https://www.flickr.com/photos/sahrudaya/albums/72157625735226160/" target="_blank" class="btn btn-outline-danger btn-sm mt-3 align-self-start"><i class="fa-solid fa-images me-1"></i> View Photo Album</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Album 2 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 bg-white">
+                        <img src="foundation_stone.jpg" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="Foundation Stone Album">
+                        <div class="card-body d-flex flex-column p-4">
+                            <span class="badge bg-primary mb-2 align-self-start">Google Photos</span>
+                            <h5 class="fw-bold mb-2">Foundation Stone & Shrine Events Album</h5>
+                            <p class="text-muted small flex-grow-1">Official photo album capturing the foundation stone blessing, parish events, and celebrations.</p>
+                            <a href="https://photos.google.com/share/AF1QipO00gxboUorwzawNUORFqgc65T1My8WFu2GFQPwfk8KKk0W6WAZAgrYbnt9N6dNuA?pli=1&key=YlYzWkhGaUFYam1LcU5DdW1LdnJMbHRxOVBZc0ln" target="_blank" class="btn btn-outline-primary btn-sm mt-auto align-self-start"><i class="fa-solid fa-images me-1"></i> View Google Photos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Album 3 -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 bg-white">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=600" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="Youth Album">
+                        <div class="card-body d-flex flex-column p-4">
+                            <span class="badge bg-success mb-2 align-self-start">SMYM Youth</span>
+                            <h5 class="fw-bold mb-2">Youth Sports & Cultural Meet</h5>
+                            <p class="text-muted small flex-grow-1">Capturing the energy, sportsmanship, and cultural talents of Nellyadi youth units.</p>
+                            <a href="https://www.instagram.com/smym_nellyadi_official/" target="_blank" class="btn btn-outline-success btn-sm mt-auto align-self-start"><i class="fa-solid fa-images me-1"></i> View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 14. CONTACT & GOOGLE MAPS ================= -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-3">
+            <h2 class="text-center section-title">Contact & Shrine Office</h2>
+            <div class="row g-4 g-lg-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3 text-danger">St. Alphonsa Pilgrim Church</h5>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-location-dot text-danger me-2"></i> Nellyadi, Dakshina Kannada, Karnataka, India — Diocese of Belthangady</p>
+                    <p class="text-muted small mb-2"><i class="fa-solid fa-envelope text-danger me-2"></i> info@stalphonsanellyadi.org</p>
+                    <p class="text-muted small mb-4"><i class="fa-solid fa-phone text-danger me-2"></i> +91 XXXXX XXXXX</p>
+
+                    <h6 class="fw-bold mt-4">Google Maps Location</h6>
+                    <p class="text-muted small">Plan your pilgrimage easily using our official Google Maps pin:</p>
+                    <a href="https://maps.app.goo.gl/4bEkbaFuExh2Jxaz6" target="_blank" class="btn btn-gold btn-sm">
+                        <i class="fa-solid fa-map-location-dot me-2"></i> Open in Google Maps
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5830901594!2d75.46!3d12.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s12%C2%B049'12.0%22N+75%C2%B027'36.0%22E!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 15. FOOTER ================= -->
+    <footer>
+        <div class="container text-center">
+            <h5 class="fw-bold mb-2">St. Alphonsa Pilgrim Church, Nellyadi</h5>
+            <p class="small mb-1 text-white-75">Syro-Malabar Catholic Diocese of Belthangady</p>
+            <p class="small mb-3 text-white-55">"Lord, give me souls and take away the rest." — St. Alphonsa</p>
+
+            <!-- Social Media Buttons -->
+            <div class="d-flex justify-content-center gap-3 my-3">
+                <a href="https://www.facebook.com/pages/St%20Alphonsa%20Catholic%20Church/1758477594176790/#" target="_blank" class="social-btn btn-facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/smym_nellyadi_official/" target="_blank" class="social-btn btn-instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-btn btn-youtube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <hr class="border-warning my-3 opacity-50">
+            <p class="small mb-0 text-white-50">&copy; 2026 St. Alphonsa Pilgrim Church Nellyadi (Diocese of Belthangady). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ================= BOOTSTRAP MODALS ================= -->
+    <!-- Donation Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-hand-holding-dollar me-2"></i> Shrine Online Offering / Donation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="handleDonationSubmit(event)">
+                        <div class="mb-3">
+                            <label for="donationCauseInput" class="form-label small fw-bold">Selected Fund / Cause</label>
+                            <input type="text" id="donationCauseInput" aria-label="Selected Fund / Cause" class="form-control form-control-sm bg-light" readonly value="Building & Shrine Development">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Full Name</label>
+                            <input type="text" class="form-control form-control-sm" required placeholder="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Phone Number / WhatsApp</label>
+                            <input type="tel" class="form-control form-control-sm" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Donation Amount (₹)</label>
+                            <input type="number" class="form-control form-control-sm" required min="100" placeholder="500">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Family Name / Ward Name (Optional)</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="e.g. Vadakkekara Ward">
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-sm w-100 fw-bold py-2">Proceed to Secure Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Association Details Modal -->
+    <div class="modal fade" id="associationModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="assocModalTitle"><i id="assocModalIcon" class="fa-solid fa-users me-2"></i> Association Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-4 h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="fa-solid fa-bullseye me-2"></i> Objective / Mission</h6>
+                                <p id="assocModalObjective" class="small text-muted mb-4" style="white-space: pre-line;"></p>
+
+                                <h6 class="fw-bold text-danger mb-2"><i class="fa-solid fa-clock me-2"></i> Meeting Timings</h6>
+                                <p id="assocModalTimings" class="small text-muted mb-0" style="white-space: pre-line;"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-4 h-100">
+                                <h6 class="fw-bold text-danger mb-2"><i class="fa-solid fa-user-group me-2"></i> Team Members</h6>
+                                <p id="assocModalTeam" class="small text-muted mb-4" style="white-space: pre-line;"></p>
+
+                                <h6 class="fw-bold text-danger mb-2"><i class="fa-solid fa-list-check me-2"></i> Key Activities</h6>
+                                <p id="assocModalActivities" class="small text-muted mb-0" style="white-space: pre-line;"></p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 bg-light rounded-4">
+                                <h6 class="fw-bold text-danger mb-2"><i class="fa-solid fa-history me-2"></i> Small History</h6>
+                                <p id="assocModalHistory" class="small text-muted mb-0" style="white-space: pre-line;"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trustees Modal -->
+    <div class="modal fade" id="trusteesModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-user-shield me-2"></i> All Shrine Trustees (Trusties)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <span>[Trustee Name 1]</span>
+                            <span class="badge bg-danger rounded-pill">2024 - 2027</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                            <span>[Trustee Name 2]</span>
+                            <span class="badge bg-danger rounded-pill">2024 - 2027</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Former Trustees Modal -->
+    <div class="modal fade" id="formerTrusteesModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title"><i class="fa-solid fa-history me-2"></i> Former Shrine Trustees</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>[Former Trustee Name 1]</span>
+                            <small class="text-muted">2021 - 2024</small>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>[Former Trustee Name 2]</span>
+                            <small class="text-muted">2018 - 2021</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Former Vicars Modal -->
+    <div class="modal fade" id="formerVicarsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-person-chalkboard me-2"></i> Former Rectors (Vicars)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. [Former Vicar 1]</span>
+                            <small class="text-muted">2018 - 2024</small>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. [Former Vicar 2]</span>
+                            <small class="text-muted">2012 - 2018</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Former Assistant Vicars Modal -->
+    <div class="modal fade" id="formerAsstVicarsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-user-group me-2"></i> Former Vice Vicars (Assistant Priests)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. [Former Asst Vicar 1]</span>
+                            <small class="text-muted">2021 - 2024</small>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. [Former Asst Vicar 2]</span>
+                            <small class="text-muted">2017 - 2020</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weekday Mass Schedule Modal -->
+    <div class="modal fade" id="weekdayMassModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title"><i class="fa-solid fa-calendar-days me-2"></i> Weekday Mass Schedule (All Weekdays)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Weekday</th>
+                                    <th>Time</th>
+                                    <th>Place / Location</th>
+                                    <th>Special Intention / Novena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Monday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-primary">Main Church</span></td>
+                                    <td>General Pilgrim Intention</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tuesday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-secondary">Main Convent</span></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Wednesday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-primary">Church</span></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Thursday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-primary">Main Church</span></td>
+                                    <td>Eucharistic Adoration & Vocations</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Friday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-primary">Church</span></td>
+                                    <td>St. Alphonsa Novena & Special Prayers</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Saturday</strong></td>
+                                    <td>6:00 PM</td>
+                                    <td><span class="badge bg-primary">Main Church</span></td>
+                                    <td>Blessed Virgin Mary Novena</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= BOOTSTRAP JS & SCRIPTS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function setDonationCause(cause) {
+            document.getElementById('donationCauseInput').value = cause;
+        }
+
+        function handleDonationSubmit(event) {
+            event.preventDefault();
+            alert("Thank you for your generous contribution to St. Alphonsa Pilgrim Church Nellyadi! You are being redirected to the secure payment gateway.");
+            const modalEl = document.getElementById('donationModal');
+            const modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+        }
+
+        function openAssociationModal(name, iconClass, team, timings, objective, activities, history) {
+            document.getElementById('assocModalTitle').innerHTML = `<i class="${iconClass} me-2"></i> ${name}`;
+            document.getElementById('assocModalObjective').innerText = objective;
+            document.getElementById('assocModalTimings').innerText = timings;
+            document.getElementById('assocModalTeam').innerText = team;
+            document.getElementById('assocModalActivities').innerText = activities;
+            document.getElementById('assocModalHistory').innerText = history;
+
+            const modal = new bootstrap.Modal(document.getElementById('associationModal'));
+            modal.show();
+        }
+
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    new bootstrap.Collapse(navbarCollapse).toggle();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
