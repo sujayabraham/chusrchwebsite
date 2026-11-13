@@ -161,7 +161,7 @@
                     <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#directory">Leadership & Orgs</a></li>
                     <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#timings">Mass Timings</a></li>
                     <li class="nav-item py-1 py-lg-0" id="navNotice" style="display:none;"><a class="nav-link" href="#notice">Weekly Notice</a></li>
-                    <li class="nav-item py-1 py-lg-0" id="navPrayer" style="display:none;"><a class="nav-link" href="#prayer">Prayer Meetings</a></li>
+                    <li class="nav-item py-1 py-lg-0" id="navPrayer"><a class="nav-link" href="#prayer">Prayer & Retreats</a></li>
                     <li class="nav-item py-1 py-lg-0" id="navNews"><a class="nav-link" href="#news">News</a></li>
                     <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#donations">Donations</a></li>
                     <li class="nav-item py-1 py-lg-0"><a class="nav-link" href="#social">Social Media</a></li>
@@ -230,17 +230,26 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="section-title text-start mb-3">Pilgrim Center History & Patron</h2>
-                    <p class="text-muted small fs-md-6">St. Alphonsa Pilgrim Church, Nellyadi is a renowned pilgrim shrine belonging to the Syro-Malabar Catholic Diocese of Belthangady, Dakshina Kannada, Karnataka. Named after St. Alphonsa, the first canonized saint of India, our parish attracts numerous pilgrims seeking spiritual solace, novena graces, and active charitable outreach.</p>
-                    <p class="text-muted small fs-md-6">As a designated pilgrim center in the Diocese of Belthangady, our community gathers regularly for Holy Qurbana, special novenas, pious associations, youth apostolate, and pilgrim hospitality.</p>
+                    <p class="text-muted small fs-md-6">St. Alphonsa Pilgrim Church, Nellyadi is a renowned pilgrimage shrine belonging to the Syro-Malabar Catholic Diocese of Belthangady in Dakshina Kannada, Karnataka. Rooted in the early Malayali migration movement that began in 1957, the parish grew from a humble prayer group into a vibrant faith community.</p>
+                    <p class="text-muted small fs-md-6">From its origin in 1963 with the first Holy Qurbana at Aralam to shifting the parish to Nellyadi in 1985 and the solemn consecration of the church on May 30, 1990, the shrine has witnessed the visible care of God. On October 12, 2008, following the canonization of St. Alphonsa, Bishop Mar Lawrence Mukkuzhi officially declared the parish a <strong>Pilgrim Center</strong>.</p>
                     <div class="row mt-4 g-3">
-                        <div class="col-6">
-                            <h6 class="text-danger fw-bold">Patron Saint</h6>
+                        <div class="col-6 col-md-4">
+                            <h6 class="text-danger fw-bold mb-1">Patron Saint</h6>
                             <p class="mb-0 text-muted small">St. Alphonsa</p>
                         </div>
-                        <div class="col-6">
-                            <h6 class="text-danger fw-bold">Diocese</h6>
+                        <div class="col-6 col-md-4">
+                            <h6 class="text-danger fw-bold mb-1">Diocese</h6>
                             <p class="mb-0 text-muted small">Diocese of Belthangady</p>
                         </div>
+                        <div class="col-12 col-md-4">
+                            <h6 class="text-danger fw-bold mb-1">Pilgrimage Declared</h6>
+                            <p class="mb-0 text-muted small">October 12, 2008</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-gold btn-sm px-3 py-2 fw-semibold shadow-sm" data-bs-toggle="modal" data-bs-target="#fullHistoryModal">
+                            <i class="fa-solid fa-book-open me-2"></i> Read Complete Parish History (1957 – Present)
+                        </button>
                     </div>
                 </div>
             </div>
@@ -290,7 +299,7 @@
                 <!-- Tab 2: Convent & Sisters -->
                 <div class="tab-pane fade" id="convent-pane" role="tabpanel" aria-labelledby="convent-tab">
                     <div class="row g-4 justify-content-center">
-                        <!-- Sister Superior -->
+                        <!-- Sacred Heart Convent Header -->
                         <div class="col-md-5">
                             <div class="card card-custom p-4 text-center h-100 bg-light">
                                 <div class="mb-3">
@@ -299,30 +308,34 @@
                                         <i class="fa-solid fa-cross fa-stack-1x"></i>
                                     </span>
                                 </div>
-                                <h5 class="fw-bold mb-1">Rev. Sr. [Sister Superior Name]</h5>
-                                <p class="text-danger fw-semibold mb-2 small">Superior / Convent Head</p>
-                                <p class="text-muted small mb-0">Guiding community prayer, pastoral service, and parish apostolate.</p>
+                                <h5 class="fw-bold mb-1">Sacred Heart (S.H.) Convent</h5>
+                                <p class="text-danger fw-semibold mb-2 small">Mary Mother Regional House, Belthangady</p>
+                                <p class="text-muted small mb-0">Established on October 15, 1992. Pioneer Sisters: Sr. Mary Rose Plakkoottam, Sr. Philomena Kurian, and Sr. Jibil Therese. Operating as the Regional House of S.H. Congregation since August 4, 2006.</p>
                             </div>
                         </div>
-                        <!-- Sisters List / Community -->
+                        <!-- Sisters Ministries & Apostolate -->
                         <div class="col-md-7">
                             <div class="card card-custom p-4 h-100 bg-light d-flex flex-column">
-                                <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-users me-2"></i> Convent Community & Sisters</h4>
+                                <h4 class="fw-bold text-danger mb-3"><i class="fa-solid fa-users me-2"></i> Convent Ministries & Apostolate</h4>
                                 <ul class="list-group list-group-flush mb-3">
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
-                                        <span>Rev. Sr. [Sister Name 1]</span>
-                                        <span class="badge bg-danger rounded-pill">Catechism & Choir</span>
+                                        <span>Continuous Eucharistic Adoration & Intercession</span>
+                                        <span class="badge bg-danger rounded-pill">Spiritual Center</span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
-                                        <span>Rev. Sr. [Sister Name 2]</span>
-                                        <span class="badge bg-danger rounded-pill">Sacristy & Liturgy</span>
+                                        <span>Sunday Catechism & Sacramental Preparation</span>
+                                        <span class="badge bg-danger rounded-pill">Faith Formation</span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
-                                        <span>Rev. Sr. [Sister Name 3]</span>
+                                        <span>Family Visiting & Missionary Outreach</span>
                                         <span class="badge bg-danger rounded-pill">Pastoral Care</span>
                                     </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2 bg-transparent">
+                                        <span>Girls' Hostel & Value-Based Youth Living</span>
+                                        <span class="badge bg-danger rounded-pill">Youth Hostel</span>
+                                    </li>
                                 </ul>
-                                <p class="text-muted small mb-0">Active involvement in Sunday catechism, pious associations animation, church cleaning, and choir assistance.</p>
+                                <p class="text-muted small mb-0">The Sisters actively animate pious associations, maintain the sacristy, direct liturgical choir, and render devoted pastoral service throughout the parish.</p>
                             </div>
                         </div>
                     </div>
@@ -392,15 +405,19 @@
                                 <h4 class="fw-bold text-primary mb-3"><i class="fa-solid fa-person-chalkboard me-2"></i> Former Rectors (Vicars)</h4>
                                 <ul class="list-group list-group-flush mb-3">
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                                        <span>Rev. Fr. [Former Vicar 1]</span>
-                                        <small class="text-muted">2018 - 2024</small>
+                                        <span>Rev. Fr. Binoy Kuriyalsherry</span>
+                                        <small class="text-muted">2021 - 2022</small>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                                        <span>Rev. Fr. [Former Vicar 2]</span>
-                                        <small class="text-muted">2012 - 2018</small>
+                                        <span>Rev. Fr. Adarsh Puthiyedath</span>
+                                        <small class="text-muted">2018 - 2021</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. John Maliyekkal</span>
+                                        <small class="text-muted">2018 Feb - June</small>
                                     </li>
                                 </ul>
-                                <button class="btn btn-outline-primary btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerVicarsModal">View All Former Vicars</button>
+                                <button class="btn btn-outline-primary btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerVicarsModal">View All 17 Former Vicars</button>
                             </div>
                         </div>
                         <!-- Former Vice Vicars -->
@@ -409,15 +426,40 @@
                                 <h4 class="fw-bold text-success mb-3"><i class="fa-solid fa-user-group me-2"></i> Former Vice Vicars (Assistant Priests)</h4>
                                 <ul class="list-group list-group-flush mb-3">
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                                        <span>Rev. Fr. [Former Asst Vicar 1]</span>
-                                        <small class="text-muted">2021 - 2024</small>
+                                        <span>Rev. Fr. Alex</span>
+                                        <small class="text-muted">Recent</small>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                                        <span>Rev. Fr. [Former Asst Vicar 2]</span>
-                                        <small class="text-muted">2017 - 2020</small>
+                                        <span>Rev. Fr. Abin</span>
+                                        <small class="text-muted">Recent</small>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>Rev. Fr. Sojan</span>
+                                        <small class="text-muted">Recent</small>
                                     </li>
                                 </ul>
-                                <button class="btn btn-outline-success btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerAsstVicarsModal">View All Former Vice Vicars</button>
+                                <button class="btn btn-outline-success btn-sm mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#formerAsstVicarsModal">View All 16 Former Assistant Vicars</button>
+                            </div>
+                        </div>
+                        <!-- Parish Wards & Family Units -->
+                        <div class="col-md-6">
+                            <div class="card card-custom p-4 h-100 border-top border-info border-4 bg-white d-flex flex-column">
+                                <h4 class="fw-bold text-info-emphasis mb-3"><i class="fa-solid fa-house-chimney-window me-2"></i> Parish Wards & Family Units (13 Wards)</h4>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>1. St. Alphonsa Ward</span>
+                                        <span class="badge bg-info text-dark rounded-pill">Nellyady</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>2. Cherupushpam Ward</span>
+                                        <span class="badge bg-info text-dark rounded-pill">Kokkada</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <span>3. St. Don Bosco Ward</span>
+                                        <span class="badge bg-info text-dark rounded-pill">Arla</span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-info btn-sm mt-auto align-self-start text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#wardsModal">View All 13 Parish Wards</button>
                             </div>
                         </div>
                     </div>
@@ -425,18 +467,59 @@
 
                 <!-- Tab 2: Organizations & Associations -->
                 <div class="tab-pane fade" id="orgs-pane" role="tabpanel" aria-labelledby="orgs-tab">
-                    <p class="text-center text-muted mb-4 small">Click on any organization below to view full team details, meeting timings, objectives, activities, and history.</p>
+                    <p class="text-center text-muted mb-4 small">Click on any committee or organization below to view full leadership team, meeting schedules, objectives, and activities.</p>
                     <div class="row g-4">
-                        <!-- Altar Angels -->
+                        <!-- 1. Trustees -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Altar Angels', 'fa-solid fa-hands-praying', 'Spiritual Director: Rev. Fr. Assistant Vicar\nHead Coordinator: [Coordinator Name]\nSenior Servers: [Name 1], [Name 2]', 'Every Saturday at 4:00 PM', 'To assist devoutly at the altar and sanctuary during Holy Qurbana and liturgical services.', 'Altar service during Sunday Qurbana, feast days, annual retreat, and sanctuary care.', 'Formed to encourage young boys and girls to grow close to the altar and deepen their reverence for the Eucharist.')">
-                                <div class="association-icon"><i class="fa-solid fa-hands-praying"></i></div>
-                                <h5 class="fw-bold">Altar Angels</h5>
-                                <p class="text-muted small mb-0">Assisting devoutly at the altar and sanctuary during liturgical services.</p>
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Shrine Trustees (Trustees / Kaikaranmar)', 'fa-solid fa-user-shield', 'President / Chairman: Rev. Fr. Mathew Joseph Vettamthadathil (Vicar)\nElected Trustees: [Trustee Name 1], [Trustee Name 2]\nAssistant Vicar: Rev. Fr. Shaji Mathew', 'Monthly & Executive Council Meetings', 'To manage shrine administration, financial stewardship, parish property, and legal affairs.', 'Financial budgeting, shrine development, audit reporting, feast planning, and facility upkeep.', 'The executive administrative body of the parish working in coordination with the Vicar and Parish Council.')">
+                                <div class="association-icon"><i class="fa-solid fa-user-shield"></i></div>
+                                <h5 class="fw-bold">Trustees</h5>
+                                <p class="text-muted small mb-0">Managing shrine administration, financial stewardship, and property development.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- Choir -->
+
+                        <!-- 2. Parish Council -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Parish Council (Pastoral Council)', 'fa-solid fa-users-gear', 'President: Rev. Fr. Mathew Joseph Vettamthadathil (Vicar)\nVice President: [Vice President Name]\nSecretary: [Secretary Name]\nMembers: Ward Representatives & Ex-officio heads', 'Every Month (First Sunday after Qurbana)', 'To serve as the central pastoral, decision-making, and consultative body guiding all parish affairs.', 'Evaluating pastoral needs, planning liturgical celebrations, organizing parish feast, and ward coordination.', 'Elected representatives from all parish wards serving as the voice of the parish community.')">
+                                <div class="association-icon"><i class="fa-solid fa-users-gear"></i></div>
+                                <h5 class="fw-bold">Parish Council</h5>
+                                <p class="text-muted small mb-0">Central pastoral council of ward representatives guiding parish decision-making.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 3. S.H. Sisters -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('S.H. Sisters (Sacred Heart Convent)', 'fa-solid fa-cross', 'Superior: Rev. Sr. Superior\nPioneer Sisters: Sr. Mary Rose Plakkoottam, Sr. Philomena Kurian, Sr. Jibil Therese\nCommunity: Sacred Heart Sisters Community', 'Daily Adoration & Monthly Recollection', 'To intercede perpetually for the parish community and render active pastoral service.', 'Perpetual Eucharistic Adoration, family visits, catechism instruction, choir leadership, sacristy care, and girls hostel management.', 'Established on Oct 15, 1992; functioning as the Mary Mother Regional House of Belthangady Diocese since Aug 4, 2006.')">
+                                <div class="association-icon"><i class="fa-solid fa-cross"></i></div>
+                                <h5 class="fw-bold">S.H. Sisters</h5>
+                                <p class="text-muted small mb-0">Sacred Heart Convent community dedicated to perpetual adoration, catechism, and family visits.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 4. Catechism Teachers -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Catechism Teachers Committee', 'fa-solid fa-book-open-reader', 'Director: Rev. Fr. Mathew Joseph Vettamthadathil\nHeadmaster / Principal: [Name]\nStaff Representative: [Name]\nFaculty: Dedicated Parish Teachers', 'Every Sunday from 10:30 AM', 'To impart solid doctrinal, moral, and scriptural faith formation to children and youth.', 'Grade-wise Sunday classes, Bible Kalotsavam, scripture exams, annual day, and retreats.', 'The cornerstone of faith formation, educating generations in the Syro-Malabar Catholic tradition.')">
+                                <div class="association-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                                <h5 class="fw-bold">Catechism Teachers</h5>
+                                <p class="text-muted small mb-0">Dedicated teaching faculty imparting faith formation and moral instruction to children.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 5. Altar Boys (Altar Angels) -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Altar Boys (Altar Angels)', 'fa-solid fa-hands-praying', 'Spiritual Director: Rev. Fr. Assistant Vicar\nHead Coordinator: [Coordinator Name]\nSenior Servers: [Name 1], [Name 2]', 'Every Saturday at 4:00 PM', 'To assist devoutly at the altar and sanctuary during Holy Qurbana and liturgical services.', 'Altar service during Sunday Qurbana, feast days, annual retreat, and sanctuary care.', 'Formed to encourage young boys and girls to grow close to the altar and deepen reverence for the Holy Eucharist.')">
+                                <div class="association-icon"><i class="fa-solid fa-hands-praying"></i></div>
+                                <h5 class="fw-bold">Altar Boys</h5>
+                                <p class="text-muted small mb-0">Sanctuary servers assisting devoutly at the altar during liturgical services.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 6. Choir -->
                         <div class="col-md-4">
                             <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Parish Choir', 'fa-solid fa-music', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nChoir Master: [Choir Master Name]\nOrganist: [Organist Name]\nLead Vocalists: [Name 1], [Name 2]', 'Every Friday at 7:00 PM', 'To elevate liturgical worship through sacred hymns, Gregorian chant, and devout choral singing.', 'Singing during Sunday Qurbana, solemn feast masses, weddings, and Christmas carols.', 'Established since the founding of the parish to lead the congregation in active liturgical participation.')">
                                 <div class="association-icon"><i class="fa-solid fa-music"></i></div>
@@ -445,57 +528,73 @@
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- Pitruvedi -->
+
+                        <!-- 7. CML Committee -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Pitruvedi', 'fa-solid fa-user-tie', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 2nd Sunday after Qurbana', 'To unite Catholic men in spiritual leadership, exemplary Christian fatherhood, and active support for parish development.', 'Family prayer promotion, charity drives, church maintenance support, and annual pilgrimage.', 'Formed under diocese guidelines to strengthen men’s participation in parish life and family spirituality.')">
-                                <div class="association-icon"><i class="fa-solid fa-user-tie"></i></div>
-                                <h5 class="fw-bold">Pitruvedi</h5>
-                                <p class="text-muted small mb-0">Men's association dedicated to spiritual leadership and Christian fatherhood.</p>
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('CML Committee (Children\'s Mary League)', 'fa-solid fa-seedling', 'Animator: Sister Superior / Catechism Head\nPresident: [Leader Name]\nSecretary: [Secretary Name]', 'Every Sunday at 10:30 AM', 'To nurture deep devotion to Mother Mary and St. Little Flower, fostering piety and virtue among children.', 'Rosary recitation during May/October, pious competitions, catechism day programs, and carol singing.', 'Cherupushpa Mission League (CML) guides children on the path of holiness through prayer and missionary spirit.')">
+                                <div class="association-icon"><i class="fa-solid fa-seedling"></i></div>
+                                <h5 class="fw-bold">CML Committee</h5>
+                                <p class="text-muted small mb-0">Children's Mary League nurturing devotion to St. Little Flower & Mother Mary.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- Mathruvedi -->
+
+                        <!-- 8. HCL Committee -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Mathruvedi', 'fa-solid fa-users', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 1st Sunday after Qurbana', 'To foster deep spiritual growth among Catholic women, promote family rosary, and engage in charitable works.', 'Intercessory prayer chains, supporting needy families, feast day hospitality, and orphanage visits.', 'Inspired by the virtues of Mother Mary and St. Alphonsa, uniting mothers in prayer and service.')">
-                                <div class="association-icon"><i class="fa-solid fa-users"></i></div>
-                                <h5 class="fw-bold">Mathruvedi</h5>
-                                <p class="text-muted small mb-0">Women's organization fostering spiritual growth, family prayer, and charitable works.</p>
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('HCL Committee (Holy Childhood League)', 'fa-solid fa-child-reaching', 'Animator: Sister Animator / Catechism Faculty\nPresident: [Student Leader]\nSecretary: [Secretary Name]', 'Every Sunday after Catechism', 'To cultivate missionary zeal, childhood innocence, and a spirit of sharing among primary school children.', 'Children\'s prayer meetings, mission mite box savings, Christmas sharing, and feast celebrations.', 'Holy Childhood Association (HCL) encouraging children to pray for and help children worldwide.')">
+                                <div class="association-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                                <h5 class="fw-bold">HCL Committee</h5>
+                                <p class="text-muted small mb-0">Holy Childhood League promoting childhood piety, prayers, and missionary sharing.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- Youth (SMYM) -->
+
+                        <!-- 9. SMYM Committee -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Youth (SMYM)', 'fa-solid fa-fire', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]\nSports Coord: [Coord Name]', 'Every Saturday at 5:30 PM', 'To empower young Catholics to live Christ-centered lives, build strong fellowship, and serve society.', 'Youth retreats, inter-parish sports meets, cultural fests, blood donation camps, and social apostolate.', 'Affiliated with SMYM (Syro-Malabar Youth Movement), active in building a vibrant youth community.')">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('SMYM Committee (Youth Movement)', 'fa-solid fa-fire', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]\nSports Coord: [Coord Name]', 'Every Saturday at 5:30 PM', 'To empower young Catholics to live Christ-centered lives, build strong fellowship, and serve society.', 'Youth retreats, inter-parish sports meets, cultural fests, blood donation camps, and social apostolate.', 'Affiliated with SMYM (Syro-Malabar Youth Movement), active in building a vibrant youth community.')">
                                 <div class="association-icon"><i class="fa-solid fa-fire"></i></div>
-                                <h5 class="fw-bold">Youth (SMYM)</h5>
+                                <h5 class="fw-bold">SMYM Committee</h5>
                                 <p class="text-muted small mb-0">Dynamic youth movement active in spiritual retreats, social service, and sports.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- CML -->
+
+                        <!-- 10. Vincent de Paul Society -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('CML (Children\'s Mary League)', 'fa-solid fa-seedling', 'Animator: Sister Superior / Catechism Head\nPresident: [Leader Name]\nSecretary: [Secretary Name]', 'Every Sunday at 10:30 AM', 'To nurture deep devotion to Mother Mary and foster piety and virtue among children.', 'Rosary recitation during May/October, pious competitions, catechism day programs, and carol singing.', 'Established to guide children on the path of holiness through the Immaculate Heart of Mary.')">
-                                <div class="association-icon"><i class="fa-solid fa-seedling"></i></div>
-                                <h5 class="fw-bold">CML (Children's Mary League)</h5>
-                                <p class="text-muted small mb-0">Pious movement nurturing devotion to Mother Mary and spiritual growth among children.</p>
-                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
-                            </div>
-                        </div>
-                        <!-- Vincent de Paul Society -->
-                        <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Vincent de Paul Society', 'fa-solid fa-hand-holding-heart', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every Sunday at 11:30 AM', 'To practice the gospel virtue of charity through person-to-person service to the poor, sick, and suffering.', 'Weekly family visits, financial aid for medical treatments, educational support, and food kits distribution.', 'A global charitable movement rooted in the parish, serving as the hands and feet of Christ to the marginalized.')">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Vincent de Paul Society (SVP)', 'fa-solid fa-hand-holding-heart', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every Sunday at 11:30 AM', 'To practice the gospel virtue of charity through person-to-person service to the poor, sick, and suffering.', 'Weekly family visits, financial aid for medical treatments, educational support, and food kits distribution.', 'A global charitable movement rooted in the parish, serving as the hands and feet of Christ to the marginalized.')">
                                 <div class="association-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
                                 <h5 class="fw-bold">Vincent de Paul Society</h5>
                                 <p class="text-muted small mb-0">Charitable society dedicated to rendering service to the poor, needy, and sick.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
-                        <!-- Sunday Catechism -->
+
+                        <!-- 11. Mathruvedi -->
                         <div class="col-md-4">
-                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Sunday Catechism', 'fa-solid fa-book-open', 'Director: Rev. Fr. Mathew Joseph Vettamthadathil\nHeadmaster / Principal: [Name]\nStaff Representative: [Name]\nFaculty: All Parish Teachers', 'Every Sunday from 10:30 AM', 'To impart solid doctrinal, moral, and scriptural formation to children and youth.', 'Grade-wise classes, Bible kalotsavam, scripture exams, annual day celebrations, and catechism retreats.', 'The cornerstone of parish faith formation, educating generations in the Syro-Malabar liturgical tradition.')">
-                                <div class="association-icon"><i class="fa-solid fa-book-open"></i></div>
-                                <h5 class="fw-bold">Sunday Catechism</h5>
-                                <p class="text-muted small mb-0">Religious formation and faith education classes for children and youth.</p>
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Mathruvedi Committee', 'fa-solid fa-users', 'Spiritual Director: Rev. Fr. Assistant Vicar\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 1st Sunday after Qurbana', 'To foster deep spiritual growth among Catholic women, promote family rosary, and engage in charitable works.', 'Intercessory prayer chains, supporting needy families, feast day hospitality, and orphanage visits.', 'Inspired by the virtues of Mother Mary and St. Alphonsa, uniting mothers in prayer and service.')">
+                                <div class="association-icon"><i class="fa-solid fa-users"></i></div>
+                                <h5 class="fw-bold">Mathruvedi</h5>
+                                <p class="text-muted small mb-0">Women's organization fostering spiritual growth, family prayer, and charitable works.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 12. Pitruvedi -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('Pitruvedi Committee', 'fa-solid fa-user-tie', 'Spiritual Director: Rev. Fr. Mathew Joseph Vettamthadathil\nPresident: [President Name]\nVice President: [VP Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Every 2nd Sunday after Qurbana', 'To unite Catholic men in spiritual leadership, exemplary Christian fatherhood, and active support for parish development.', 'Family prayer promotion, charity drives, church maintenance support, and annual pilgrimage.', 'Formed under Fr. Jose Thannipara and diocese guidelines to strengthen men’s participation in parish life.')">
+                                <div class="association-icon"><i class="fa-solid fa-user-tie"></i></div>
+                                <h5 class="fw-bold">Pitruvedi</h5>
+                                <p class="text-muted small mb-0">Men's association dedicated to spiritual leadership and Christian fatherhood.</p>
+                                <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- 13. KSMCA Committee -->
+                        <div class="col-md-4">
+                            <div class="card card-custom p-4 text-center h-100 bg-white" style="cursor: pointer;" onclick="openAssociationModal('KSMCA Committee (Karnataka Syro-Malabar Catholic Association)', 'fa-solid fa-building-user', 'Spiritual Advisor: Rev. Fr. Vicar\nPresident: [President Name]\nSecretary: [Secretary Name]\nTreasurer: [Treasurer Name]', 'Monthly Executive Meetings', 'To unite Syro-Malabar Catholics in Karnataka for socio-cultural welfare, educational advancement, and civic rights.', 'Advocating for community minority rights, educational guidance, cultural integration, and social welfare programs.', 'Karnataka Syro-Malabar Catholic Association (KSMCA) strengthening the Catholic lay movement in Karnataka.')">
+                                <div class="association-icon"><i class="fa-solid fa-building-user"></i></div>
+                                <h5 class="fw-bold">KSMCA Committee</h5>
+                                <p class="text-muted small mb-0">Karnataka Syro-Malabar Catholic Association uniting the community for social welfare & civic rights.</p>
                                 <span class="text-danger small fw-semibold mt-2">View Details <i class="fa-solid fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
@@ -555,7 +654,7 @@
                             <i class="fa-solid fa-calendar-days fa-2x text-warning mb-3"></i>
                             <h5 class="fw-bold">Weekday Qurbana</h5>
                             <p class="text-muted small mb-2">Monday to Saturday</p>
-                            <h4 class="text-dark fw-bold">6:00 PM</h4>
+                            <h4 class="text-dark fw-bold">6:30 AM</h4>
                             <p class="small text-muted mt-2 mb-0">St. Alphonsa Novena on Tuesdays</p>
                         </div>
                         <button class="btn btn-outline-warning btn-sm mt-auto align-self-center px-4" data-bs-toggle="modal" data-bs-target="#weekdayMassModal">View All Weekdays</button>
@@ -588,12 +687,56 @@
         </div>
     </section>
 
-    <!-- ================= 8. SCHEDULED PRAYER MEETINGS (Conditional) ================= -->
-    <section id="prayer" class="py-5 bg-white" style="display:none;">
+    <!-- ================= 8. SCHEDULED PRAYER MEETINGS & RETREAT CENTER ================= -->
+    <section id="prayer" class="py-5 bg-white">
         <div class="container py-3">
-            <h2 class="text-center section-title">Scheduled Prayer Meetings</h2>
+            <h2 class="text-center section-title mb-2">Scheduled Prayer Meetings & Retreat Center</h2>
+            <p class="text-center text-muted mb-5 small">Join our parish intercessory vigils, novenas, and residential retreats at Moriah Retreat Centre, Nellyadi.</p>
+
             <div class="row g-4 justify-content-center" id="prayerMeetingsGrid">
-                <!-- Dynamically populated -->
+                <!-- Moriah Night Vigil -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom p-4 h-100 border-top border-danger border-4 bg-light text-center">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fa-solid fa-moon fa-2x text-danger mb-3"></i>
+                            <h5 class="fw-bold text-danger mb-1">Moriah Night Vigil</h5>
+                            <p class="text-muted small mb-2 fw-semibold">Moriah Retreat Centre, Nellyadi</p>
+                            <span class="badge bg-danger px-3 py-2 mx-auto mb-3">1st Friday of Every Month</span>
+                            <h4 class="fw-bold text-dark mb-2">7:30 PM – 2:00 AM</h4>
+                            <p class="small text-muted flex-grow-1">Monthly overnight prayer vigil, Eucharistic adoration, intercession, healing prayers, and Holy Mass.</p>
+                            <p class="small text-danger fw-semibold mb-0 mt-2">Director: Rev. Fr. Thomas Varakil MST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moriah Residential Retreat -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom p-4 h-100 border-top border-warning border-4 bg-light text-center">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fa-solid fa-hands-praying fa-2x text-warning mb-3"></i>
+                            <h5 class="fw-bold text-warning-emphasis mb-1">Moriah Residential Retreat</h5>
+                            <p class="text-muted small mb-2 fw-semibold">Moriah Retreat Centre (Est. Jan 7, 2005)</p>
+                            <span class="badge bg-warning text-dark px-3 py-2 mx-auto mb-3">Monthly Residential</span>
+                            <h6 class="fw-bold text-dark mb-2">Last Sunday 6:00 PM to Friday 9:00 AM</h6>
+                            <p class="small text-muted flex-grow-1">5-day guided spiritual renewal retreat featuring Word of God, Sacramental confession, counseling, and deliverance prayers.</p>
+                            <p class="small text-dark fw-semibold mb-0 mt-2">Director: Rev. Fr. Thomas Varakil MST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- St. Alphonsa Novena & Tuesday Devotion -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-custom p-4 h-100 border-top border-primary border-4 bg-light text-center">
+                        <div class="card-body d-flex flex-column">
+                            <i class="fa-solid fa-cross fa-2x text-primary mb-3"></i>
+                            <h5 class="fw-bold text-primary mb-1">St. Alphonsa Novena & Mass</h5>
+                            <p class="text-muted small mb-2 fw-semibold">St. Alphonsa Pilgrim Church Sanctuary</p>
+                            <span class="badge bg-primary px-3 py-2 mx-auto mb-3">Every Tuesday</span>
+                            <h4 class="fw-bold text-dark mb-2">6:30 AM</h4>
+                            <p class="small text-muted flex-grow-1">Solemn Novena of St. Alphonsa, special intercessory prayers for pilgrims, Holy Qurbana, and veneration of the holy relic.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -968,16 +1111,76 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-group list-group-flush">
+                    <ol class="list-group list-group-numbered list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                            <span>Rev. Fr. [Former Vicar 1]</span>
-                            <small class="text-muted">2018 - 2024</small>
+                            <span>Rev. Fr. Mathew Mullanmada</span>
+                            <span class="badge bg-primary rounded-pill">1974 - 1977</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                            <span>Rev. Fr. [Former Vicar 2]</span>
-                            <small class="text-muted">2012 - 2018</small>
+                            <span>Rev. Fr. Joseph Kappil</span>
+                            <span class="badge bg-primary rounded-pill">1977 - 1979</span>
                         </li>
-                    </ul>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Lawrence Mukkuzhi</span>
+                            <span class="badge bg-primary rounded-pill">1979 - 1981</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Mathew Perumpallil</span>
+                            <span class="badge bg-primary rounded-pill">1981 - 1986</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Thomas Chittilappalli</span>
+                            <span class="badge bg-primary rounded-pill">1986 - 1991</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jose Kalathiparambil</span>
+                            <span class="badge bg-primary rounded-pill">1991 - 1992</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. John Kallungal</span>
+                            <span class="badge bg-primary rounded-pill">1992 - 1996</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Thomas Kannangal</span>
+                            <span class="badge bg-primary rounded-pill">1996 - 2000</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Joseph Mattam</span>
+                            <span class="badge bg-primary rounded-pill">2000 - 2001</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jose Vettukattil</span>
+                            <span class="badge bg-primary rounded-pill">2001 - 2004</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. George Asharikunnel</span>
+                            <span class="badge bg-primary rounded-pill">2004 - 2008</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Kuriakose Vettuvayi</span>
+                            <span class="badge bg-primary rounded-pill">2008 - 2012</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Stephen Jayraj OFM. Cap</span>
+                            <span class="badge bg-primary rounded-pill">2012 - 2017</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jose Thannipara</span>
+                            <span class="badge bg-primary rounded-pill">2017 - 2018</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. John Maliyekkal</span>
+                            <span class="badge bg-primary rounded-pill">2018 Feb - June</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Adarsh Puthiyedath</span>
+                            <span class="badge bg-primary rounded-pill">2018 - 2021</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Binoy Kuriyalsherry</span>
+                            <span class="badge bg-primary rounded-pill">2021 - 2022</span>
+                        </li>
+                    </ol>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
@@ -995,15 +1198,306 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-group list-group-flush">
+                    <ol class="list-group list-group-numbered list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                            <span>Rev. Fr. [Former Asst Vicar 1]</span>
-                            <small class="text-muted">2021 - 2024</small>
+                            <span>Rev. Fr. Mathew Vattamthadam</span>
+                            <span class="badge bg-success rounded-pill">2006 - 2007</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center py-2">
-                            <span>Rev. Fr. [Former Asst Vicar 2]</span>
-                            <small class="text-muted">2017 - 2020</small>
+                            <span>Rev. Fr. Joseph Orappamkuzhi CMI</span>
+                            <span class="badge bg-success rounded-pill">2007 - 2008</span>
                         </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Mathew Nerivattam CMI</span>
+                            <span class="badge bg-success rounded-pill">2008 - 2009</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. John Kadavumkandathil OSFS</span>
+                            <span class="badge bg-success rounded-pill">2009 - 2010</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Sijo Edakkarott MCBS</span>
+                            <span class="badge bg-success rounded-pill">2010 - 2011</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Joseph Valookaran</span>
+                            <span class="badge bg-success rounded-pill">2011 - 2012</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Adarsh Puthiyedath</span>
+                            <span class="badge bg-success rounded-pill">2012 - 2013</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Joseph Thadathil</span>
+                            <span class="badge bg-success rounded-pill">2013 - 2014</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jobi Kochupurackal CST</span>
+                            <span class="badge bg-success rounded-pill">2014 - 2015</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jaison Puthupallil CST</span>
+                            <span class="badge bg-success rounded-pill">2015 - 2016</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Roshan Puthuseri</span>
+                            <span class="badge bg-success rounded-pill">2016 - 2017</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Manoj Kochuputhanpurakkal</span>
+                            <span class="badge bg-success rounded-pill">2017 - 2018</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Jinto Plakoottathil</span>
+                            <span class="badge bg-success rounded-pill">2018 - 2021</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Sojan</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Abin</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                            <span>Rev. Fr. Alex</span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parish Wards Modal -->
+    <div class="modal fade" id="wardsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-house-chimney-window me-2"></i> Parish Wards & Family Units (13 Active Wards)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="text-muted small mb-4">St. Alphonsa Pilgrim Church, Nellyadi is divided into 13 active parish wards (kudumba koottayma / family prayer units) fostering spiritual fellowship, monthly ward prayers, and pastoral care across various areas.</p>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">1. St. Alphonsa Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Nellyady</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 1</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">2. Cherupushpam Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Kokkada</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 2</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">3. St. Don Bosco Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Arla</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 3</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">4. St. Francis Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Paddadka</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 4</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">5. St. Jude Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Paddadka</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 5</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">6. St. Joseph Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Kawkrady</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 6</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">7. St. Lawrence Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Nellyady</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 7</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">8. St. Mary's Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Koppa</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 8</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">9. St. Paul Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Paddadka</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 9</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">10. St. Augustine Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Shibanti</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 10</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">11. St. Thomas Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Sannampady</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 11</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">12. Velankanni Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Koppa</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 12</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="p-3 bg-light rounded-3 border-start border-danger border-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <h6 class="fw-bold text-danger mb-1">13. St. Vincent Ward</h6>
+                                    <p class="mb-0 text-muted small"><i class="fa-solid fa-location-dot me-1 text-danger"></i> Mannagundi</p>
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Ward 13</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Parish History Modal -->
+    <div class="modal fade" id="fullHistoryModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="fa-solid fa-church me-2"></i> History of St. Alphonsa Pilgrim Church, Nellyadi (1957 – Present)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4" style="line-height: 1.8;">
+                    <div class="alert alert-danger border-0 shadow-sm mb-4">
+                        <p class="mb-0 small fw-semibold text-danger"><i class="fa-solid fa-quote-left me-2"></i> "When we look into the history of the parish, the visible care of the invisible God is clearly manifest."</p>
+                    </div>
+
+                    <!-- 1. Migration -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-route me-2"></i> 1. Early Migration & Prayer Group (1957)</h5>
+                    <p class="text-muted small">Migration of Malayali families from various parts of Kerala to Karnataka began in 1957. Areas like Nellyadi, Udane, and Shiradi in Dakshina Kannada became prominent settlements, earning the nickname <em>"Little Kerala of Karnataka."</em> Nellyadi is situated 70 km from Mangaluru along National Highway 75 (connecting Mangaluru and Bengaluru).</p>
+                    <p class="text-muted small">In 1957, pioneer Christian families gathered to form the first prayer group: <em>Ittiyavira Mattom, Varki Kallupuraparambil, Thomas Puthanpura, Devasya Vellachalil, Puthumana Varghese, Joseph Perumballil, Mamachan Thannikkal, Joseph Kallungal, Oni Vadakkeparambil, Chacko Vadakkeparambil, Chandy, Mathai Charuplavil, Kunjepp Muthukulamth, Abraham, and Patrose Peechanamkattu</em>.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 2. Aralam Church -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-place-of-worship me-2"></i> 2. The First Church at Aralam (1963 – 1985)</h5>
+                    <p class="text-muted small">On <strong>March 3, 1963</strong>, Rev. Fr. Avudeeso C.M.I. offered the first Holy Mass in a temporary shed at Aralam. Priests traveled every Sunday from Udane to offer Holy Qurbana. In 1967, Rev. Fr. Thomas Pulikkal (Vicar of Udane) built a new church in Aralam dedicated to the Holy Three Kings (Magi), which was later re-dedicated to the Blessed Virgin Mary as <strong>St. Mary's Church Aralam</strong>.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 3. Shifting to Nellyadi -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-building-flag me-2"></i> 3. Shifting the Parish Church to Nellyadi (1985)</h5>
+                    <p class="text-muted small">Through the diligent efforts of Rev. Fr. Mathew Mullanmada, Ms. Lucy Mascarenes (Diocese of Mangalore) donated 2 acres and 7 cents of land in Nellyadi. Under Rev. Fr. Mathew Perumpallil, a church hall was constructed. In April 1985, a general body meeting decided to transfer the parish center from Aralam to Nellyadi. Sunday Holy Qurbana commenced at Nellyadi on <strong>July 7, 1985</strong>, officially establishing <strong>St. Mary's Church Nellyadi</strong>.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 4. Construction & Consecration -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-cross me-2"></i> 4. Establishment & Consecration of St. Alphonsa Church (1986 – 1990)</h5>
+                    <p class="text-muted small">Rev. Fr. Lawrence Mukkuzhi (then Asst. Vicar) purchased 1 acre of land from N.S. Varghese. Rev. Fr. Thomas Chittilappalli (Vicar from May 9, 1986) led youth and faith formation movements. A parish delegation led by Mr. Mathew Vazhappally met Bishop Mar Sebastian Valloppilly (Diocese of Thalassery). Rev. Fr. Peter Koottiani was appointed to study the project, and formal approval was granted by Rome (The Holy See) on <strong>July 25, 1987</strong> to dedicate the church to Blessed Alphonsa.</p>
+                    <p class="text-muted small">The foundation stone was laid on <strong>January 7, 1988</strong>. Thanks to contributions from parishioners and support from various parishes in Karnataka and Kerala, the new church was completed and solemnly consecrated on <strong>May 30, 1990</strong> by Bishop Mar Sebastian Valloppilly and Bishop Mar George Valiyamattom.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 5. Catechism & Cemeteries -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-school me-2"></i> 5. Catechism Building, Play "Longinos" & Cemeteries</h5>
+                    <p class="text-muted small">Under Rev. Fr. Thomas Kannankal, 8 cents of land adjacent to the church was acquired to build a 3-story Sunday School catechism building, funded by parishioner donations and proceeds from staging the drama <em>Longinos</em>. Fr. Kannankal also established consecrated cemeteries at both Aralam and Nellyadi, providing proper sacred burial grounds for families.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 6. Declaration as Pilgrim Center -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-star me-2"></i> 6. Declaration as Official Pilgrimage Center (October 12, 2008)</h5>
+                    <p class="text-muted small">Following the canonization of St. Alphonsa by Pope Benedict XVI, Rev. Fr. Kuriakose Vettuvayi renovated the shrine premises with gardens and decorative lighting. On <strong>October 12, 2008</strong>, His Excellency Bishop Mar Lawrence Mukkuzhi of the Diocese of Belthangady officially declared St. Alphonsa Church, Nellyadi (then comprising 170 family units) as a recognized <strong>Pilgrimage Center</strong>.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 7. Pastoral Achievements under Vicars -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-user-tie me-2"></i> 7. Milestones & Achievements Under Various Vicars</h5>
+                    <ul class="text-muted small ps-3">
+                        <li><strong>Fr. Jose Kalathiparambil:</strong> Courageously preserved the Aralam Cross Church site.</li>
+                        <li><strong>Fr. John Kallungal:</strong> Strengthened the Vincent de Paul Society, shifted Sunday catechism to Nellyadi, and constructed boundary walls and entry gate.</li>
+                        <li><strong>Fr. Tomy Mattathil:</strong> Built a family atmosphere in the parish, strengthened all pious organizations before departing to Rome for higher studies.</li>
+                        <li><strong>Fr. Jose Vettukattil MSFS:</strong> Planted rubber saplings on church grounds, repaired church buildings, and oversaw Arasinamakki becoming an independent parish.</li>
+                        <li><strong>Fr. George Asharikunnel:</strong> Installed borewell, stage, musical instruments, ceiling above church, completed Sunday school building, and constructed the priest's residence. Established Ichilampadi parish.</li>
+                        <li><strong>Fr. Kuriakose Vettuvayi:</strong> Renovated cemetery, built drinking water tank, beautified shrine garden, and led the parish to Pilgrimage Center declaration in 2008.</li>
+                        <li><strong>Fr. Stephen Jayaraj OFM. Cap:</strong> Built granite steps from <em>kurishadi</em> (wayside cross), erected flagpole, stone cross, stone lamp post (<em>kalvilakku</em>), interlocked church courtyard, and constructed 6 commercial shophouses (<em>Alphonsa Complex</em>) via ₹29.5 Lakhs Karnataka Minority Development Fund. Acquired St. Francis English Medium School Kokkada & initiated orphanage construction.</li>
+                        <li><strong>Fr. Jose Thannipara:</strong> Formed <em>Pitruvedi</em> (fathers' forum) and animated pious associations.</li>
+                        <li><strong>Fr. John Maliyekkal:</strong> Organised Sunday School annual day, installed new church sound system, and constructed boundary walls.</li>
+                        <li><strong>Fr. Adarsh Puthiyedath & Fr. Jinto Plakoottathil:</strong> Current parish priests guiding Nellyadi, Aralam, and Ichilampadi.</li>
+                    </ul>
+
+                    <hr class="my-4">
+
+                    <!-- 8. Institutions & Organizations -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-building-columns me-2"></i> 8. Parish Institutions & Retreat Centers</h5>
+                    <ul class="text-muted small ps-3">
+                        <li><strong>Moriah Retreat Centre, Nellyadi:</strong> Established on January 7, 2005. Conducts monthly night vigils on 1st Fridays (7:30 PM – 2:00 AM) and monthly 5-day residential retreats (last Sunday 6:00 PM to Friday 9:00 AM) under Director Rev. Fr. Thomas Varakil MST.</li>
+                        <li><strong>St. Francis English Medium School & Orphanage (Kokkada):</strong> Acquired Sree Ganesh School under Fr. Stephen Jayaraj to provide quality value-based education up to Grade 10, accompanied by an orphanage facility served by FCC (Franciscan Clarist Congregation) Sisters and Fr. Roy.</li>
+                        <li><strong>Sacred Heart (S.H.) Convent:</strong> Established on October 15, 1992 (Pioneer Sisters: Sr. Mary Rose Plakkoottam, Sr. Philomena Kurian, Sr. Jibil Therese). Designated as Mary Mother Regional House of Belthangady Diocese on August 4, 2006.</li>
+                    </ul>
+
+                    <hr class="my-4">
+
+                    <!-- 9. Vocations & Diocese -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-hands-praying me-2"></i> 9. Vocations & Belthangady Diocese</h5>
+                    <p class="text-muted small"><strong>Priestly Vocations:</strong> Fr. Salin Thomas Kallupuraparambil (ordained April 20, 1998 by Bishop Mar George Valiyamattom), Fr. Prasad Kallupuraparambil M.S.T. (2nd priest), Fr. Vinoy Punnathanath, Fr. Augustine Pottamkulangara, and Fr. Sajan Embranthivayalil.</p>
+                    <p class="text-muted small">On <strong>April 24, 1999</strong>, Pope John Paul II established the Diocese of Belthangady and appointed Fr. Lawrence Mukkuzhi (former Nellyadi priest/vicar) as its first Bishop, uniting parishes in Dakshina Kannada, Udupi, and Kodagu.</p>
+
+                    <hr class="my-4">
+
+                    <!-- 10. Sub-Parishes -->
+                    <h5 class="fw-bold text-danger mb-2"><i class="fa-solid fa-sitemap me-2"></i> 10. Sub-Parishes & Daughter Churches</h5>
+                    <ul class="text-muted small ps-3">
+                        <li><strong>Arasinamakki:</strong> Formerly under Nellyadi, became an independent parish in 2001 (now under Udane church).</li>
+                        <li><strong>Ichilampadi (St. Thérèse of Lisieux Church):</strong> Established under Nellyadi by Fr. George Asharikunnel.</li>
+                        <li><strong>Aralam (St. Mary's Cross Church):</strong> The mother site of Nellyadi parish, established as an independent parish in 2006.</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -1035,37 +1529,37 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Monday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-primary">Main Church</span></td>
                                     <td>General Pilgrim Intention</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Tuesday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-secondary">Main Convent</span></td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Wednesday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-primary">Church</span></td>
                                     <td>-</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Thursday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-primary">Main Church</span></td>
                                     <td>Eucharistic Adoration & Vocations</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Friday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-primary">Church</span></td>
                                     <td>St. Alphonsa Novena & Special Prayers</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Saturday</strong></td>
-                                    <td>6:00 PM</td>
+                                    <td>6:30 AM</td>
                                     <td><span class="badge bg-primary">Main Church</span></td>
                                     <td>Blessed Virgin Mary Novena</td>
                                 </tr>
